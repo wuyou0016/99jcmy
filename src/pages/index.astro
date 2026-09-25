@@ -1,0 +1,159 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeHero from '../components/HomeHero.astro';
+import StatsBar from '../components/StatsBar.astro';
+import RankingEntries from '../components/RankingEntries.astro';
+import { isDemoEntry } from '../data/utils/demo-filter';
+import { getPublishableProviders } from '../data/utils/provider-publish-gate';
+import { getRankingPageData } from '../data/utils/ranking-entries';
+import { resolveCanonicalUrl } from '../config/seo';
+
+// 首页展示"当前收录的推荐榜单数量"用的是真实存在的榜单页面数量（综合 + 三个专项），
+// 和 /rankings/ 首页用的是同一份 subRankings 结构，不是凭空写的数字。
+const RANKING_PAGE_COUNT = 4; // overall + best-value + most-stable + for-beginners
+
+const [articles, publishableProviders, { entries: overallEntries }] = await Promise.all([
+  getCollection('articles', ({ id }) => !isDemoEntry(id)),
+  getPublishableProviders(),
+  getRankingPageData('overall'),
+]);
+
+// "热门机场"分类板块只需要几个直达入口，不是完整榜单——完整榜单交给下方
+// 的排名列表板块和 /rankings/ 页面，这里只做"目录"意义上的快捷指路。
+const directoryTopProviders = overallEntries.slice(0, 6);
+const rankedEntries = overallEntries.slice(0, 7);
+
+// 首页可见内容里唯一的真实排名列表用于 ItemList，只放名称+链接，
+// 不带任何评分/评级字段——当前数据模型里没有可靠的客观评分，写了就是虚构。
+const rankedItemListJsonLd =
+  rankedEntries.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: '99机场梯子导航 综合推荐目录 TOP 7',
+        itemListElement: rankedEntries.map((entry, index) => ({
+          '@type': 'ListItem',
+          position: index + 1,
+          name: entry.providerName,
+          url: resolveCanonicalUrl(`/airports/${entry.providerSlug}/`),
+        })),
+      }
+    : null;
+---
+
+<BaseLayout
+  title="99机场梯子导航｜机场与梯子工具分类导航目录"
+  description="99机场梯子导航把常见机场代理品牌、推荐榜单、协议与术语百科、使用教程、故障排查整理成清晰的类目索引，按分类快速找到需要的资源入口，而不是让你自己一个个网站去翻。"
+  keywords={['机场导航', '机场推荐', '机场代理', '梯子导航', '机场目录', '99机场梯子导航']}
+>
+  <HomeHero />
+
+  <div class="container">
+    <StatsBar providerCount={publishableProviders.length} rankingCount={RANKING_PAGE_COUNT} articleCount={articles.length} />
+
+    <section class="section" id="directory">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">分类目录</span>
+          <h2>按类目直接找入口</h2>
+        </div>
+      </div>
+      <div class="directory-grid">
+        <div class="directory-block">
+          <div class="directory-block__head">
+            <span class="directory-block__icon" aria-hidden="true">址</span>
+            <div>
+              <h3 class="directory-block__title">热门机场</h3>
+            </div>
+          </div>
+          <p class="directory-block__desc">当前综合排名靠前的几个品牌，点进去看官方信息、第三方资料与编辑结论。</p>
+          {
+            directoryTopProviders.length > 0 ? (
+              <ul class="directory-block__links">
+                {directoryTopProviders.map((entry) => (
+                  <li>
+                    <a
+                      href={`/airports/${entry.providerSlug}/`}
+                      data-analytics-event="recommendation_card_click"
+                      data-provider={entry.providerSlug}
+                      data-provider-name={entry.providerName}
+                      data-cta-label="首页分类目录-热门机场"
+                    >
+                      {entry.providerName}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="directory-block__desc">当前暂无符合发布条件的服务商，数据不足时不会为了凑数而展示。</p>
+            )
+          }
+          <a class="directory-block__more" href="/airports/">查看完整机场目录 →</a>
+        </div>
+
+        <div class="directory-block">
+          <div class="directory-block__head">
+            <span class="directory-block__icon" aria-hidden="true">榜</span>
+            <div>
+              <h3 class="directory-block__title">推荐榜单</h3>
+            </div>
+          </div>
+          <p class="directory-block__desc">综合榜之外，还按性价比、稳定性、新手友好这几个具体场景各自拆了一份榜单。</p>
+          <ul class="directory-block__links">
+            <li><a href="/rankings/">综合推荐榜</a></li>
+            <li><a href="/rankings/best-value/">性价比机场</a></li>
+            <li><a href="/rankings/most-stable/">最稳定的机场</a></li>
+            <li><a href="/rankings/for-beginners/">新手推荐</a></li>
+          </ul>
+          <a class="directory-block__more" href="/rankings/">查看全部榜单 →</a>
+        </div>
+
+        <div class="directory-block">
+          <div class="directory-block__head">
+            <span class="directory-block__icon" aria-hidden="true">识</span>
+            <div>
+              <h3 class="directory-block__title">知识与百科</h3>
+            </div>
+          </div>
+          <p class="directory-block__desc">从"机场代理是什么"这类基础概念，到协议、线路相关的术语解释。</p>
+          <ul class="directory-block__links">
+            <li><a href="/knowledge/">机场代理知识库</a></li>
+            <li><a href="/glossary/">术语百科</a></li>
+            <li><a href="/tutorials/">使用教程</a></li>
+          </ul>
+          <a class="directory-block__more" href="/knowledge/">进入知识库 →</a>
+        </div>
+
+        <div class="directory-block">
+          <div class="directory-block__head">
+            <span class="directory-block__icon" aria-hidden="true">修</span>
+            <div>
+              <h3 class="directory-block__title">排查与参考</h3>
+            </div>
+          </div>
+          <p class="directory-block__desc">用上之后遇到连接问题，或者想看看不同品牌怎么被横向比较、怎么被评测。</p>
+          <ul class="directory-block__links">
+            <li><a href="/troubleshooting/">故障排查合集</a></li>
+            <li><a href="/comparisons/">机场对比表</a></li>
+            <li><a href="/reviews/">机场评测</a></li>
+          </ul>
+          <a class="directory-block__more" href="/troubleshooting/">查看故障排查 →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <div>
+          <span class="section__eyebrow">综合排名</span>
+          <h2>当前收录排名</h2>
+        </div>
+        <a class="section__more" href="/rankings/">查看完整榜单与理由 →</a>
+      </div>
+      <RankingEntries entries={rankedEntries} />
+    </section>
+  </div>
+
+  {rankedItemListJsonLd && <script type="application/ld+json" set:html={JSON.stringify(rankedItemListJsonLd)} />}
+</BaseLayout>

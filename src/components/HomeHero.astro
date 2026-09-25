@@ -1,0 +1,72 @@
+---
+// 99机场梯子导航首页 Hero 既不是机场吧那种"Hero+排名侧栏"，也不是机场荟那种
+// "Hero+横向对比表"——这里定位是"导航目录站"，Hero 只负责说清楚"这是一份
+//什么样的目录"，真正的分类导航网格和排名列表都放在 Hero 下方的独立板块，
+// 见 index.astro 的 #directory 区块。
+---
+
+<section class="hero">
+  <div class="hero__backdrop" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero__top hero__top--single">
+      <div>
+        <span class="hero__eyebrow-badge">分类导航 · 按图索骥 · 持续更新</span>
+        <h1>
+          机场与梯子工具，分类摆好等你查
+          <br />
+          <span class="hero__accent">99机场梯子导航</span>
+        </h1>
+        <p class="hero__subtitle">
+          把常见的机场代理品牌、推荐榜单、协议与术语百科、使用教程、故障排查整理成一份类目清晰的导航目录，不用在几十个标签页之间来回翻找——需要什么，从对应类目点进去就好。
+        </p>
+
+        <ul class="hero__features">
+          <li>
+            <img class="hero__feature-icon" src="/assets/icons/features/shield.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>分类清楚</strong>
+              品牌、榜单、知识各归其类
+            </span>
+          </li>
+          <li>
+            <img class="hero__feature-icon" src="/assets/icons/features/bolt.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>直达入口</strong>
+              少点几次就能找到
+            </span>
+          </li>
+          <li>
+            <img class="hero__feature-icon" src="/assets/icons/features/diamond.svg" alt="" aria-hidden="true" />
+            <span>
+              <strong>持续收录</strong>
+              目录会跟着内容一起扩充
+            </span>
+          </li>
+        </ul>
+
+        <div class="hero__ctas">
+          <span class="hero__cta-glow-wrap">
+            <img class="hero__cta-glow asset-dark" src="/assets/glow/dark/cta.svg" alt="" aria-hidden="true" />
+            <img class="hero__cta-glow asset-light" src="/assets/glow/light/cta.svg" alt="" aria-hidden="true" />
+            <a class="button button--primary button--large" href="#directory">
+              <img class="button__bg asset-dark" src="/assets/buttons/primary-dark.svg" alt="" aria-hidden="true" />
+              <img class="button__bg asset-light" src="/assets/buttons/primary-light.svg" alt="" aria-hidden="true" />
+              <span class="button__text">浏览分类目录 ↓</span>
+            </a>
+          </span>
+          <a class="button button--large" href="/airports/">
+            <img class="button__bg asset-dark" src="/assets/buttons/secondary-dark.svg" alt="" aria-hidden="true" />
+            <img class="button__bg asset-light" src="/assets/buttons/secondary-light.svg" alt="" aria-hidden="true" />
+            <span class="button__text">机场品牌目录</span>
+          </a>
+          <a class="button button--large" href="/rankings/">
+            <img class="button__bg asset-dark" src="/assets/buttons/secondary-dark.svg" alt="" aria-hidden="true" />
+            <img class="button__bg asset-light" src="/assets/buttons/secondary-light.svg" alt="" aria-hidden="true" />
+            <span class="button__text">推荐排行榜</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,614 @@
+[
+  {
+    "id": "wuyou-lianjie",
+    "slug": "wuyou-lianjie",
+    "name": "无忧链接",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://mtklink.cc/wuyou",
+      "description": "MINI、舒心、省心三档价格和流量在官网首页就能直接看到，不需要注册账号也不用东问西问——放进这份目录的第一条，很大程度是因为它信息公开到了'不用额外核实'的程度，适合当新手认识机场行业的起点。",
+      "pricing": [
+        { "name": "MINI", "price": "¥6.6/月", "billingCycle": "yearly", "trafficQuota": "40GB/月" },
+        { "name": "舒心", "price": "¥19/月起", "billingCycle": "monthly", "trafficQuota": "100GB" },
+        { "name": "省心", "price": "¥33/月起", "billingCycle": "monthly", "trafficQuota": "200GB" }
+      ],
+      "protocols": ["VLESS", "Trojan", "Hysteria2"],
+      "routes": ["IPLC", "IEPL"],
+      "regions": ["香港", "日本", "新加坡", "美国"],
+      "clientSupport": ["Clash 系", "Shadowrocket", "v2rayN"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/wuyoulink",
+        "retrievedAt": "2026-09-25",
+        "claim": "套餐结构、协议、线路与客户端支持信息整理自第三方导航站'买梯子导航'，标注为资料已核实；本站目录收录的跳转链接使用该页面提供的官方入口地址。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/wuyoulink",
+        "claim": "本站目录综合收录的首位条目，MINI/舒心/省心三档套餐及优惠码 wuyou666（具体折扣以官网结算页为准）",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["套餐梯度清楚，MINI/舒心/省心覆盖不同预算", "不用注册账号就能在目录页看到套餐结构", "协议与客户端支持覆盖主流选择"],
+      "cons": ["MINI 档按年计费，不参与常规折扣", "晚高峰速度、丢包率这类数据，本站目录里暂时没有独立实测支撑"],
+      "suitableFor": ["第一次接触机场、想先从目录里挑个入门选项试用的新手", "预算有限、看重入门套餐性价比的用户"],
+      "notSuitableFor": ["需要看到独立测速/稳定性数据才决定购买的进阶用户"],
+      "summary": "放在目录首位，主要基于资料公开透明、新手友好这一点——不是本站独立测速出来的'最快'，具体线路表现建议自行用短周期套餐先验证。",
+      "source": {
+        "type": "editorial",
+        "retrievedAt": "2026-09-25",
+        "claim": "本站基于第三方资料整理后的目录收录判断，非独立测速结论"
+      }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "sogo-cloud",
+    "slug": "sogo-cloud",
+    "name": "Sogo云",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://wzjc.sogoyunaff.cc/#/?code=k09iVZV5",
+      "description": "目录里价格档位偏高的一条（25元/月、150GB），主打多设备与4K流媒体场景；收录它是想让目录覆盖到'重度用量'这一类需求，不是价格越低排位越靠前。",
+      "pricing": [{ "name": "入门套餐", "price": "25元/月", "billingCycle": "monthly", "trafficQuota": "150GB" }],
+      "protocols": ["VLESS（第三方资料）", "Trojan（第三方资料）", "Shadowsocks（第三方资料）"],
+      "regions": ["香港", "日本", "美国", "新加坡"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://jichangcha.co/brands/sogo/",
+        "retrievedAt": "2026-09-25",
+        "claim": "价格、协议、地区信息来自第三方导航站'机场查'的品牌页；该页面同时展示的测速数字与流媒体/AI解锁勾选表被该站自己明确标注为'模拟示例数据'，本站目录不采用。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为'资料待核验'：仅确认官网入口可访问，未提供套餐资料",
+        "date": "2026-09-25"
+      },
+      {
+        "source": "机场查 jichangcha.co",
+        "sourceUrl": "https://jichangcha.co/brands/sogo/",
+        "claim": "该站列出优惠码 SOGO10000（8折），但同一页面的'优缺点'小节又写'暂无优惠码'，两处描述自相矛盾，本站按目录收录原则如实转述，不代替判断哪个准确",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["流量档位在目录里数一数二大（150GB起），多设备/重度流媒体场景可能划算"],
+      "cons": ["价格档位在目录收录品牌里偏高，轻度用户没必要多付钱", "来源资料本身存在优惠码描述矛盾"],
+      "suitableFor": ["多设备家庭、重度流媒体使用者"],
+      "notSuitableFor": ["预算有限、日常用量不大的轻度用户"],
+      "summary": "收进目录主要是补齐'高配'这个类目位置，不是价格意义上的推荐首选——用量撑不起150GB的话，目录里其他入门档位更适合。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "guangsu-cloud",
+    "slug": "guangsu-cloud",
+    "name": "光速云",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://sahude.gsyvipaff.com/#/?code=cD14nZYf",
+      "description": "2020年开业，是目录收录名单里运营时间较长的一条；资料本身是从另一个友情链接站转述来的二手信息，收录时特别标注这一层可信度差异，不会因为'老牌'两个字就默认资料准确。",
+      "pricing": [{ "name": "入门套餐", "price": "年付折算约¥7.5/月", "billingCycle": "yearly", "trafficQuota": "59GB" }],
+      "protocols": ["VLESS（第三方资料）"],
+      "routes": ["IEPL（第三方资料）", "企业级内网专线（第三方资料）"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/guangsuyun",
+        "retrievedAt": "2026-09-25",
+        "claim": "资料转引自另一个友情链接站'梯子工厂'（itizi.mom），本站未做独立核验，收录进目录时保留'二手转述'这一属性标注。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com（转引自 itizi.mom）",
+        "sourceUrl": "https://maitizi.com/guangsuyun",
+        "claim": "2020年开业老牌，自研客户端为主，第三方客户端需联系客服；据介绍有新人优惠码（约8折）",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["运营时间较长（2020年开业），不是刚上线的新品牌"],
+      "cons": ["资料属于二次转引，可信度层级比目录里直接来源的品牌低一档", "自研客户端为主，第三方客户端需要额外联系客服导入"],
+      "suitableFor": ["能接受自研客户端、看重品牌运营年限的用户"],
+      "notSuitableFor": ["只用第三方客户端（Clash/Shadowrocket等）、不想额外咨询客服的用户"],
+      "summary": "目录里资料可信度层级相对较低的一条——不是说它不好，是收录时如实标注了'二手转述'这个事实，建议购买前自己额外核实。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "xingdaomeng",
+    "slug": "xingdaomeng",
+    "name": "星岛梦",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://kfccbb.xingdaomeng.com/#/?code=yyH19CtQ",
+      "description": "另一份第三方资料给出了相对具体的套餐信息（约¥8/月起、60GB年付），协议覆盖SS/Trojan/VLESS；提醒一句，那份资料里的测速图表被来源站自己标注为'模拟示例'，收录进目录时不采纳那部分。",
+      "pricing": [{ "name": "入门套餐", "price": "约¥8/月起（年付）", "billingCycle": "yearly", "trafficQuota": "60GB" }],
+      "protocols": ["Shadowsocks（第三方资料）", "Trojan（第三方资料）", "VLESS（第三方资料）"],
+      "routes": ["企业级内网专线（第三方资料）"],
+      "regions": ["香港", "日本", "美国", "新加坡"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://jichangcha.co/brands/xingdaomeng/",
+        "retrievedAt": "2026-09-25",
+        "claim": "价格、协议、地区与套餐定位来自第三方导航站'机场查'的品牌页；该页面同时展示的测速数字与流媒体/AI解锁勾选表被该站自己明确标注为'模拟示例数据'，本站目录只采信价格与协议这类可核验信息。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为'资料待核验'：仅确认官网入口可用，未提供套餐资料",
+        "date": "2026-09-25"
+      },
+      {
+        "source": "机场查 jichangcha.co",
+        "sourceUrl": "https://jichangcha.co/brands/xingdaomeng/",
+        "claim": "2020年开业，六年运营，优惠码 nmw888（新人注册9折）；页面所附测速报告与流媒体/AI解锁表格均为该站自行标注的模拟示例数据，非真实实测",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["运营时间较长（多年老牌），据第三方资料跑路风险相对低", "套餐含不限时买断选项，协议覆盖较全"],
+      "cons": ["没有任何来源提供过真实测速/解锁数据（唯一可见的图表已被来源站自己标注为示例）", "具体套餐细节需要联系客服确认"],
+      "suitableFor": ["看重品牌运营年限、愿意自行核实套餐细节的用户"],
+      "notSuitableFor": ["需要看到真实测速/解锁数据才决定购买的用户"],
+      "summary": "目录收录时特别提醒：这家唯一出现过的'测速图'其实是示例数据，不是真实测试——这也是本站坚持标注数据性质的原因，不然读者分不清真假。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "weifeng-network",
+    "slug": "weifeng-network",
+    "name": "微风网络",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://wep01.breezenetaff.com/#/?code=XzOO248D",
+      "description": "定位入门级专线机场，采用 IEPL 专线；乘风档月付价格由站长直接确认为¥27/月（200GB），收录进目录时这条价格标注为编辑直接确认，可信度层级高于目录里大多数纯第三方转述的条目。",
+      "pricing": [{ "name": "乘风", "price": "¥27/月", "billingCycle": "monthly", "trafficQuota": "200GB" }],
+      "routes": ["IEPL（第三方资料）"],
+      "regions": ["香港", "新加坡", "日本", "美国"],
+      "source": {
+        "type": "editorial",
+        "retrievedAt": "2026-09-25",
+        "claim": "乘风档¥27/月/200GB价格由站长直接确认，与此前'机场YYDS'第三方资料记录的数字一致；定位与线路信息仍来自第三方资料转述，官网需注册账号，本站未创建账号核实。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/weifeng",
+        "claim": "该来源记录的是另一档入门套餐（约¥11/月起，100GB），与站长确认的乘风档（27元/200GB）覆盖的是不同档位，收录目录时两条并列保留，不互相取代",
+        "date": "2026-09-25"
+      },
+      {
+        "source": "机场YYDS（历史资料，站长早期项目记录）",
+        "claim": "乘风档 200GB/27元/月，与站长提供的套餐资料一致",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["价格已由站长直接确认（¥27/月，乘风档200GB），不是单一第三方猜测", "定位清晰，主打 IEPL 专线"],
+      "cons": ["官网需先注册账号才能查看套餐详情页，比目录里其他条目门槛更高", "测速数据暂无可参考数字"],
+      "suitableFor": ["愿意先注册账号再自行核实其他细节的用户"],
+      "notSuitableFor": ["需要测速数据支撑才决定购买的用户"],
+      "summary": "目录里价格可信度较高的一条——价格是站长直接确认的，不是猜的；但节点、测速这些细节仍缺资料，购买前建议先注册确认其他条款。",
+      "source": {
+        "type": "editorial",
+        "retrievedAt": "2026-09-25",
+        "claim": "价格部分为站长直接确认；其余判断基于第三方资料整理后的目录收录判断"
+      }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "firefly",
+    "slug": "firefly",
+    "name": "Firefly",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://vip02.fireflyaff.com/#/?code=Rmc0fhp4",
+      "description": "两个独立第三方来源对价格的描述基本一致（年付约8元/月起、60GB），是目录里少数能被两个独立来源互相印证价格的条目之一。",
+      "pricing": [{ "name": "入门套餐", "price": "约¥8/月起", "billingCycle": "yearly", "trafficQuota": "60GB" }],
+      "routes": ["IPLC（第三方资料）"],
+      "regions": ["香港", "新加坡", "日本", "台湾"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/firefly",
+        "retrievedAt": "2026-09-25",
+        "claim": "价格被两个独立第三方来源互相印证，可信度层级相对较高，但仍非本站实测或官方核实。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/firefly",
+        "claim": "官方入口需注册账号，测速与流媒体/AI解锁描述均来自第三方资料，尚未经实测验证",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["价格信息被两个独立第三方来源互相印证，可信度相对较高", "IPLC 专线定位明确"],
+      "cons": ["官网需注册才能查看详情", "测速与解锁数据均未经本站实测"],
+      "suitableFor": ["看重'至少有交叉验证资料'而非单一来源的用户"],
+      "notSuitableFor": ["需要本站实测数据支撑决策的用户"],
+      "summary": "目录里资料交叉验证程度较高的条目之一，但仍缺本站独立测速，购买前建议先用短周期套餐验证实际体验。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "feimao-cloud",
+    "slug": "feimao-cloud",
+    "name": "飞猫云",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://flycat1.flycatvipaff.cc/#/?code=sTn3w676",
+      "description": "两个独立第三方来源对入门套餐的描述基本一致：约7元/月起、50GB，年付84元；协议记录为 Shadowsocks/Trojan/VLESS，宣称全线 IPLC 专线，是目录里入门价位相对靠前的一条。",
+      "pricing": [{ "name": "入门套餐", "price": "约¥7/月起（年付¥84）", "billingCycle": "yearly", "trafficQuota": "50GB" }],
+      "protocols": ["Shadowsocks（第三方资料）", "Trojan（第三方资料）", "VLESS（第三方资料）"],
+      "routes": ["IPLC（第三方资料）"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/feimao",
+        "retrievedAt": "2026-09-25",
+        "claim": "价格与协议被两个独立第三方来源互相印证，本站未通过官方入口独立核实。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/feimao",
+        "claim": "官方入口需注册账号，暂无本站测试数据（丢包率、稳定性等指标均未开始积累）",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["入门套餐价格与协议信息被两个独立来源互相印证", "协议覆盖较全（SS/Trojan/VLESS）"],
+      "cons": ["官网需注册才能核实", "暂无本站测速/稳定性数据"],
+      "suitableFor": ["预算有限、想尝试多协议选择的用户"],
+      "notSuitableFor": ["需要本站实测数据支撑决策的用户"],
+      "summary": "目录里入门价位相对靠前的一条，资料双来源印证，但实际体验仍需自行验证。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "yifan-cloud",
+    "slug": "yifan-cloud",
+    "name": "一翻云",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://wzjc.1flyunaff.cc/#/?code=eZbZVKVG",
+      "description": "目录里资料暂时空白的一条：官网能打开，但没有任何公开渠道能查到具体套餐内容，先占个类目位置，等后续有更多信息再补充评估。",
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/",
+        "retrievedAt": "2026-09-25",
+        "claim": "第三方导航站标注为'资料待核验'，仅确认官网入口可访问。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为资料待核验，未提供套餐信息",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["官网入口确认可正常访问"],
+      "cons": ["没有任何可参考的套餐、价格、协议信息"],
+      "suitableFor": ["愿意自己先探路、回来分享信息的用户"],
+      "notSuitableFor": ["需要现成资料才能比较的用户"],
+      "summary": "目前唯一能确认的就是'网站打得开'，目录里如实标注为资料空白，不去猜测填补。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "yuzhou-cloud",
+    "slug": "yuzhou-cloud",
+    "name": "宇宙云",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://wzjc.yuzoucloud.cc/#/?code=neQj0Arj",
+      "description": "第三方资料显示宇宙云定位综合旗舰型机场，采用企业级内网专线，节点覆盖70+个，套餐为不限时设计，提供自研客户端，同时支持导入第三方订阅（需联系客服）。",
+      "routes": ["企业级内网专线（第三方资料）"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/yuzhouyun",
+        "retrievedAt": "2026-09-25",
+        "claim": "资料转述自友情链接站'机场宝'（jichangbao.com），本站未通过官方入口独立核实。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com（转引自 jichangbao.com）",
+        "sourceUrl": "https://maitizi.com/yuzhouyun",
+        "claim": "宣称可解锁 Netflix/Disney+/YouTube 及 ChatGPT/Claude/Gemini 等平台，套餐不限时",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["节点数量宣称较多（70+）", "套餐不限时设计"],
+      "cons": ["资料属于二次转引，可信度层级更低", "自研客户端为主，导入第三方订阅需额外联系客服", "暂无本站或独立第三方测速数据"],
+      "suitableFor": ["看重节点数量、能接受额外联系客服的用户"],
+      "notSuitableFor": ["希望立即用第三方客户端直接使用、不愿额外沟通的用户"],
+      "summary": "目录收录时特别提醒：解锁能力等关键卖点均来自二次转引资料，没有独立验证，购买前建议自行确认。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "kuaili",
+    "slug": "kuaili",
+    "name": "快狸",
+    "status": "watch",
+    "vendor": {
+      "officialWebsite": "https://yiyige.kuailiaff.com/#/?code=1hO0yrs7",
+      "description": "第三方资料对快狸的线路描述存在分歧：一个来源称主打'中转优化线路'，另一来源称IPLC/BGP或IEPL说法不一。定位方面，一个来源称面向极客/跨境电商/外贸专业用户，另一来源称主打'上手简单、三网直连'的日常用户。目录收录时两种说法都保留，不替你选边站。",
+      "pricing": [{ "name": "入门套餐", "price": "25元/月", "billingCycle": "monthly", "trafficQuota": "150GB" }],
+      "protocols": ["Shadowsocks（第三方资料）", "Trojan（第三方资料）", "VLESS（第三方资料）"],
+      "regions": ["香港", "日本", "美国", "台湾"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://jichangcha.co/brands/kuaili/",
+        "retrievedAt": "2026-09-25",
+        "claim": "价格、协议、优惠码来自该站'站长品牌清单'；该页面测速与解锁图表被该站自己标注为'统一口径的模拟示例'，本站不采用。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/kuaili",
+        "claim": "称线路类型描述不一致（IPLC/BGP 或 IEPL），定位极客/跨境电商/外贸专业用户群体",
+        "date": "2026-09-25"
+      },
+      {
+        "source": "机场查 jichangcha.co",
+        "sourceUrl": "https://jichangcha.co/brands/kuaili/",
+        "claim": "称'中转优化线路'，定位上手简单/三网直连的日常用户；优惠码 theo66（8折）",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["有具体价格与协议信息（两个来源在这点上不冲突）"],
+      "cons": ["两个第三方来源对线路类型与定位人群的描述明显不同，本站无法判断哪个准确", "无任何独立测速/解锁数据"],
+      "suitableFor": ["能接受先自行核实线路类型再决定的用户"],
+      "notSuitableFor": ["需要来源一致的清晰资料才能放心比较的新手"],
+      "summary": "目录里价格资料相对具体，但线路类型和目标人群的描述存在明显分歧，购买前建议直接向客服确认。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "speedworld",
+    "slug": "speedworld",
+    "name": "速界",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://work.speedworldaff.cc/#/?code=Igi3YXQY",
+      "description": "品牌名主打'速度'这个概念，但目录收录时手上没有任何测速数据或套餐资料能验证这个定位，只能确认官网可以正常访问。",
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/",
+        "retrievedAt": "2026-09-25",
+        "claim": "第三方导航站标注为'资料待核验'，仅确认官网入口可访问。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为资料待核验，未提供套餐信息",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["官网入口确认可正常访问"],
+      "cons": ["品牌名暗示的'速度'卖点，目前没有任何测速数据能验证"],
+      "suitableFor": ["愿意自行测速验证的用户"],
+      "notSuitableFor": ["直接相信品牌名字里带的速度暗示、不核实就下单的用户"],
+      "summary": "'速界'这个名字听起来很唬人，但目录收录只认资料不认名字——该测还是要自己测。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "edge-node",
+    "slug": "edge-node",
+    "name": "边缘节点",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://work.edgenovaaff.cc/#/?code=79iTqOAr",
+      "description": "品牌名暗示了技术定位（边缘节点部署），但目录收录时没有资料能验证这个定位是否属实，官网可访问，套餐详情待补充。",
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/",
+        "retrievedAt": "2026-09-25",
+        "claim": "第三方导航站标注为'资料待核验'，仅确认官网入口可访问。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为资料待核验，未提供套餐信息",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["官网入口确认可正常访问"],
+      "cons": ["品牌名暗示的技术卖点目前没有资料佐证，不能当真"],
+      "suitableFor": ["愿意自己核实品牌名背后是否有实际技术支撑的用户"],
+      "notSuitableFor": ["容易被品牌名字带节奏、不核实细节就下单的用户"],
+      "summary": "目录收录提醒一句：机场品牌起名经常带点技术感词汇，名字本身不构成资料依据。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "guangnian-ladder",
+    "slug": "guangnian-ladder",
+    "name": "光年梯",
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://ggmq.gntaff.com/#/?code=mNsjN9Jf",
+      "description": "第三方资料显示光年梯定位新手友好，主打一键订阅导入与简洁客户端，宣称三网优化线路、ChatGPT原生解锁。",
+      "pricing": [{ "name": "入门套餐", "price": "18元/月", "billingCycle": "monthly", "trafficQuota": "110GB" }],
+      "protocols": ["Shadowsocks（第三方资料）", "Trojan（第三方资料）", "VLESS（第三方资料）"],
+      "regions": ["香港", "日本", "美国", "台湾"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://jichangcha.co/brands/guangnian/",
+        "retrievedAt": "2026-09-25",
+        "claim": "套餐按该站2026-08-09截图核验；线路、节点与解锁该站自己标注为'尚无独立实测，页面图表为模拟示例'，本站目录不采信测速/解锁数字。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为'资料待核验'：仅确认官网入口可用，未提供套餐资料",
+        "date": "2026-09-25"
+      },
+      {
+        "source": "机场查 jichangcha.co",
+        "sourceUrl": "https://jichangcha.co/brands/guangnian/",
+        "claim": "据该站'优缺点'小节，HBO Max不支持，节点地区偏主流",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["据第三方资料定位新手友好，一键订阅导入降低上手门槛", "价格经第三方截图核验"],
+      "cons": ["据来源方自述，HBO Max不支持，节点地区偏主流", "无任何独立测速/解锁数据"],
+      "suitableFor": ["第一次接触机场、只需主流节点的新手"],
+      "notSuitableFor": ["需要覆盖更多流媒体平台或节点地区的用户"],
+      "summary": "目录里定位新手友好的一条，价格已截图核验，但缺乏独立测速数据，购买前建议自行验证。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "shanyue",
+    "slug": "shanyue",
+    "name": "闪跃",
+    "aliases": ["FlashLeap"],
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://wep01.flashleapaff.com/#/?code=D3N30Gco",
+      "description": "第三方资料显示闪跃（FlashLeap）宣称采用 IPLC 专线与骨干网接入，年付约8元/月起、含60GB流量，节点覆盖香港、新加坡、日本、台湾、美国等地区。",
+      "pricing": [{ "name": "入门套餐", "price": "约¥8/月起", "billingCycle": "yearly", "trafficQuota": "60GB" }],
+      "routes": ["IPLC（第三方资料）"],
+      "regions": ["香港", "新加坡", "日本", "台湾", "美国"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://maitizi.com/shanyue",
+        "retrievedAt": "2026-09-25",
+        "claim": "官方入口为验证码校验页，本站未完成验证核实，以下为第三方资料整理。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/shanyue",
+        "claim": "测速与解锁描述均来自第三方资料，尚未经本站实测验证",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["节点覆盖地区信息相对具体（港/新/日/台/美）"],
+      "cons": ["官网入口为验证码校验流程，本站未完成核实", "测速与解锁数据均未经本站实测"],
+      "suitableFor": ["能接受官网验证流程、看重节点覆盖地区的用户"],
+      "notSuitableFor": ["需要本站实测数据支撑决策的用户"],
+      "summary": "目录里套餐与节点资料相对具体的一条，但均来自第三方转述，购买前建议自行验证实际体验。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  },
+  {
+    "id": "twilight",
+    "slug": "twilight",
+    "name": "暮光加速",
+    "aliases": ["暮光网络"],
+    "status": "active",
+    "vendor": {
+      "officialWebsite": "https://varnexa.twilightaff.com/#/?code=sdiwT8nj",
+      "description": "第三方资料显示该品牌主打IEPL专线（官网标注），套餐层级从基础到至尊四档，另有不限时流量包与私人定制节点选项。第三方来源对该品牌的中文名称记录不一致（'暮光加速'/'暮光网络'），目录收录时两种写法都保留。",
+      "pricing": [
+        { "name": "轻量年付", "price": "年付¥109（约¥9.1/月）", "billingCycle": "yearly", "trafficQuota": "70GB" },
+        { "name": "基础档（120G月付起）", "price": "约¥20/月起", "billingCycle": "monthly", "trafficQuota": "120GB" }
+      ],
+      "routes": ["IEPL（官网标注，第三方转述）"],
+      "source": {
+        "type": "third-party",
+        "sourceUrl": "https://jichangcha.co/brands/twilight/",
+        "retrievedAt": "2026-09-25",
+        "claim": "套餐名称、流量与价格按该站2026-08-08截图核验（部分流量与设备限制被遮挡）；速度、晚高峰、稳定性与解锁该站自己标注为'尚无独立实测'，本站目录同样不采信任何速度/解锁数字。"
+      }
+    },
+    "thirdPartyNotes": [
+      {
+        "source": "买梯子导航 maitizi.com",
+        "sourceUrl": "https://maitizi.com/",
+        "claim": "标注为'资料待核验'：仅确认官网入口可用，未提供套餐资料，命名为'暮光加速'",
+        "date": "2026-09-25"
+      },
+      {
+        "source": "机场查 jichangcha.co",
+        "sourceUrl": "https://jichangcha.co/brands/twilight/",
+        "claim": "命名为'暮光网络'；节点地区、协议与设备限制资料未公开，支付方式待核实（该站自述）",
+        "date": "2026-09-25"
+      }
+    ],
+    "editorial": {
+      "pros": ["套餐层级相对完整（基础到高档均有），另有不限时流量包适合低频用户", "价格经第三方截图核验，非纯文字转述"],
+      "cons": ["节点地区、协议与设备限制资料两个来源均未公开", "速度、晚高峰与解锁均无任何独立实测数据", "不同第三方来源对品牌中文名称记录不一致"],
+      "suitableFor": ["预算中等、想要IEPL专线套餐的用户", "低频使用、偏好不限时流量包的用户"],
+      "notSuitableFor": ["需要提前了解具体协议/节点地区的用户"],
+      "summary": "目录里套餐结构相对完整且价格经过截图核验的一条，但技术细节两个来源均未披露，建议先用短周期套餐验证再决定长期订阅。",
+      "source": { "type": "editorial", "retrievedAt": "2026-09-25", "claim": "本站基于第三方资料整理后的目录收录判断" }
+    },
+    "lastVerified": "2026-09-25",
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
+  }
+]
