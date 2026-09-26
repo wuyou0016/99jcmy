@@ -22,6 +22,8 @@ const [articles, publishableProviders, { entries: overallEntries }] = await Prom
 // "热门机场"分类板块只需要几个直达入口，不是完整榜单——完整榜单交给下方
 // 的排名列表板块和 /rankings/ 页面，这里只做"目录"意义上的快捷指路。
 const directoryTopProviders = overallEntries.slice(0, 6);
+const top1Provider = directoryTopProviders.find((e) => e.finalRank === 1);
+const restDirectoryProviders = directoryTopProviders.filter((e) => e.finalRank !== 1);
 const rankedEntries = overallEntries.slice(0, 7);
 
 // 首页可见内容里唯一的真实排名列表用于 ItemList，只放名称+链接，
@@ -69,9 +71,28 @@ const rankedItemListJsonLd =
           </div>
           <p class="directory-block__desc">当前综合排名靠前的几个品牌，点进去看官方信息、第三方资料与编辑结论。</p>
           {
-            directoryTopProviders.length > 0 ? (
+            top1Provider && (
+              <div class="directory-top-spotlight">
+                <span class="directory-top-spotlight__badge">👑 站群统一首推 · NO.1</span>
+                <a
+                  class="directory-top-spotlight__link"
+                  href={`/airports/${top1Provider.providerSlug}/`}
+                  data-analytics-event="recommendation_card_click"
+                  data-provider={top1Provider.providerSlug}
+                  data-provider-name={top1Provider.providerName}
+                  data-cta-label="首页分类目录-热门机场首推"
+                >
+                  <span class="directory-top-spotlight__name">{top1Provider.providerName}</span>
+                  <span class="directory-top-spotlight__price">低至 ¥6.6/月起</span>
+                  <span class="directory-top-spotlight__arrow">直达 →</span>
+                </a>
+              </div>
+            )
+          }
+          {
+            restDirectoryProviders.length > 0 ? (
               <ul class="directory-block__links">
-                {directoryTopProviders.map((entry) => (
+                {restDirectoryProviders.map((entry) => (
                   <li>
                     <a
                       href={`/airports/${entry.providerSlug}/`}
@@ -85,9 +106,7 @@ const rankedItemListJsonLd =
                   </li>
                 ))}
               </ul>
-            ) : (
-              <p class="directory-block__desc">当前暂无符合发布条件的服务商，数据不足时不会为了凑数而展示。</p>
-            )
+            ) : null
           }
           <a class="directory-block__more" href="/airports/">查看完整机场目录 →</a>
         </div>
@@ -157,3 +176,59 @@ const rankedItemListJsonLd =
 
   {rankedItemListJsonLd && <script type="application/ld+json" set:html={JSON.stringify(rankedItemListJsonLd)} />}
 </BaseLayout>
+
+<style>
+  .directory-top-spotlight {
+    position: relative;
+    margin: var(--space-3) 0 var(--space-4);
+    padding: 0.875rem 1rem;
+    border-radius: var(--radius-md);
+    border: 2px solid #f59e0b;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(245, 158, 11, 0.03));
+    box-shadow: 0 2px 12px rgba(245, 158, 11, 0.18);
+  }
+  .directory-top-spotlight__badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    margin-bottom: 0.375rem;
+    box-shadow: 0 2px 6px rgba(245, 158, 11, 0.3);
+  }
+  .directory-top-spotlight__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  .directory-top-spotlight__name {
+    font-size: 1.0625rem;
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .directory-top-spotlight__price {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #d97706;
+    background: rgba(245, 158, 11, 0.15);
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+  :root[data-theme='dark'] .directory-top-spotlight__price {
+    color: #fbbf24;
+    background: rgba(245, 158, 11, 0.25);
+    border-color: rgba(245, 158, 11, 0.4);
+  }
+  .directory-top-spotlight__arrow {
+    color: #d97706;
+    font-weight: 700;
+    font-size: 0.875rem;
+  }
+</style>
+
